@@ -7,3 +7,10 @@ header {
     padding: 10px;
     text-align: center;
 }
+.container {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+  }
