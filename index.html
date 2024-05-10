@@ -1,66 +1,134 @@
+<!-- index.html (Home Page) -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sam's Fitness</title>
-    <style>
-      body {
-        background-image: url("images/gym.jpg");
-        background-size: cover;
-        background-position: center;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem;
-      }
-      .header {
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-      .header h1 {
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
-      }
-      .header p {
-        font-size: 1.5rem;
-        color: rgb(0, 0, 0)5;
-      }
-      .card {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 2rem;
-        margin-bottom: 2rem;
-      }
-      .card h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-      }
-      .card p {
-        font-size: 1.2rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h1>Sam's Fitness</h1>
-        <p>Your Path to Fitness Starts Here</p>
-      </div>
-      <div class="card">
-        <h2>Welcome to Sam's Fitness</h2>
-        <p>
-          Sam's Fitness is a world-class gym dedicated to helping you achieve your fitness goals. Our state-of-the-art facilities, expert trainers, and supportive community will help you get in the best shape of your life.
-        </p>
-        <p>
-          Whether you're a beginner or a seasoned athlete, we have everything you need to succeed. From weightlifting and cardio equipment to group classes and personal training, we've got you covered.
-        </p>
-        <p>
-          Join us today and start your journey to a healthier, happier you. <a href="contact.html">Contact Us</a>
+<head>
+    <title>Windows and Doors E-commerce Website</title>
+</head>
+<body>
+    <h1>Welcome to our Windows and Doors E-commerce Website</h1>
+    <p>Featured products:</p>
+    <ul>
+        <li>Window 1</li>
+        <li>Door 1</li>
+    </ul>
+    <p><a href="admin_login.html">Admin Login</a></p>
+    <p><a href="customer_login.html">Customer Login</a></p>
+</body>
+</html>
 
-        </p>
-      </div>
-    </div>
-  </body>
+<!-- admin_login.html (Admin Login Page) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+</head>
+<body>
+    <h1>Admin Login</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
+
+<!-- customer_login.html (Customer Login Page) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Login</title>
+</head>
+<body>
+    <h1>Customer Login</h1>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
+
+<!-- products.html (Products Page) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Add to Cart</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Window 1</td>
+            <td>Description 1</td>
+            <td>$100</td>
+            <td>10</td>
+            <td><button>Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Door 1</td>
+            <td>Description 2</td>
+            <td>$200</td>
+            <td>5</td>
+            <td><button>Add to Cart</button></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- cart.html (Cart Page) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Cart</h1>
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Window 1</td>
+            <td>2</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Door 1</td>
+            <td>1</td>
+            <td>$200</td>
+        </tr>
+    </table>
+    <p><a href="checkout.html">Checkout</a></p>
+</body>
+</html>
+
+<!-- checkout.html (Checkout Page) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <p>Thank you for your purchase!</p>
+</body>
 </html>
